@@ -6,4 +6,4 @@ Credit for the inpiration behind how I've begun to set up my UI, although mine i
 https://github.com/fronzbot/githass
 
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistan_home.png)
-
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistant_lights.png)
