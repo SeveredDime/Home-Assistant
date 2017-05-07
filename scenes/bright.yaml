@@ -1,0 +1,10 @@
+name: Bright
+entities:
+  light.chair_lamp:
+    state: on
+    brightness: 255
+  light.couch_lamp:
+    state: on
+    brightness: 255
+
+

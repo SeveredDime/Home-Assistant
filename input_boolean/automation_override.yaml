@@ -1,0 +1,4 @@
+automation_override:
+  name: Disable Automation
+  initial: off
+  icon: mdi:stop

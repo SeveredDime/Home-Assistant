@@ -1,0 +1,11 @@
+name: Movie Time
+entities:
+  light.chair_lamp:
+    state: on
+    brightness: 50
+  light.couch_lamp:
+    state: on
+    brightness: 50
+
+
+

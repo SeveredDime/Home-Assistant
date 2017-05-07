@@ -1,0 +1,9 @@
+garage_off:
+  alias: "Turn off garage lights after 10 minutes"
+  sequence:
+    - delay:
+        minutes: 10
+    - service: homeassistant.turn_off
+      data:
+        entity_id:
+          - group.garage_lights

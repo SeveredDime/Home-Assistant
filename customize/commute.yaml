@@ -1,0 +1,7 @@
+  sensor.google_travel_time__driving:
+    friendly_name: Robb's Commute
+    icon: mdi:car
+  sensor.google_travel_time__driving_2:
+    friendly_name: Annie's Commute
+    icon: mdi:car
+

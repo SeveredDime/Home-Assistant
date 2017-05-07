@@ -1,0 +1,38 @@
+  light.kitchen_level_5_0:
+    friendly_name: Kitchen Lights
+    icon: mdi:ceiling-light  
+  light.chair_light:
+    friendly_name: Chair Lamp
+    icon: mdi:lamp
+  light.couch_light:
+    friendly_name: Couch Lamp
+    icon: mdi:lamp
+  light.coat_rack:
+    friendly_name: Coat Rack
+    icon: mdi:hanger
+  light.garage_light_left:
+    friendly_name: Left Garage Light
+    icon: mdi:spotlight-beam
+  light.garage_light_right:
+    friendly_name: Right Garage Light
+    icon: mdi:spotlight-beam
+  light.anatheas_light:
+    friendly_name: Anathea's Light
+    icon: mdi:lamp
+  light.robbs_light:
+    friendly_name: Robb's Light
+    icon: mdi:lamp
+  scene.movie_time:
+    icon: mdi:filmstrip
+  scene.bright:
+    icon: mdi:weather-sunny
+  group.kitchen_lights:
+    icon: mdi:fridge
+  group.bedroom_lights:
+    icon: mdi:hotel
+  group.living_room_lights:
+    icon: mdi:sofa
+  group.outdoor_lights:
+    icon: mdi:tree
+  group.foyer_lights:
+    icon: mdi:glassdoor
