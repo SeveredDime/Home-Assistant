@@ -2,6 +2,9 @@
 <p><strong>Devices:</strong></p>
 <ul>
 <li>Raspberry Pi3</li>
+<ul>
+<li>All In One Installer</li>
+</ul>
 <li>Google Home</li>
 <li>Phillips Hue</li>
 <ul>
