@@ -1,4 +1,5 @@
 # Home-Assistant
+<p><strong>Devices</strong></p>
 <p><strong>Existing:</strong></p>
 <ul>
 <li>Raspberry Pi3</li>
