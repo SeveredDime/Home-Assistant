@@ -1,5 +1,4 @@
 # Home-Assistant
-<p><strong>Devices</strong></p>
 <p><strong>Existing:</strong></p>
 <ul>
 <li>Raspberry Pi3</li>
@@ -35,7 +34,7 @@
 <ul>
 <li>Github:
 <ul>
-<li>Add pictures for all tabs</li>
+<li><span style="text-decoration: line-through;">Add pictures for all tabs</span></li>
 </ul>
 </li>
 <li>Home Assistant
