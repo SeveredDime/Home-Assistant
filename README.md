@@ -48,3 +48,7 @@
 
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistan_home.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistant_lights.png)
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/weather.png)
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/network.png)
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/pi.png)
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/automation.png)
