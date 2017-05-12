@@ -46,6 +46,7 @@
 </li>
 </ul>
 
+
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistan_home.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistant_lights.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/weather.png)
