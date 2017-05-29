@@ -9,13 +9,11 @@ homeassistant:
 
 # Show links to resources in log and frontend
 
-
 # Enables the frontend
 frontend:
 
 http:
   api_password: !secret api_password 
-
 
 # Checks for available updates
 updater:
@@ -35,6 +33,9 @@ logbook:
 # Track the sun
 sun:
 
+recorder:
+  purge_days: 3
+
 script: !include_dir_merge_named scripts
 scene: !include_dir_list scenes
 group: !include group.yaml
@@ -48,15 +49,15 @@ media_player:
   - platform: roku
   - platform: plex
 
-
 emulated_hue:
   type: google_home
   host_ip: 192.168.1.102
   listen_port: 80
   expose_by_default: true
   exposed_domains:
-    - light
-    - switch
+       - light
+       - switch
+      
 
 ifttt:
   key: !secret ifttt
@@ -66,3 +67,41 @@ zwave:
   config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
   polling_interval: 30000
 
+feedreader:
+  urls:
+    - http://coewebapps.edmonton.ca/facilitynotifications/rss/SportsFields.rss
+
+hdmi_cec:
+  devices:
+    Receiver: 1.0.0.0
+    BlueRay player: 1.1.0.0
+  
+switch:
+  platform: flux
+  lights:
+    - light.chair_light
+    - light.couch_light
+  name: Fluxer
+  start_time: '5:00'
+  stop_time: '22:00'
+  start_colortemp: 8000
+  sunset_colortemp: 2500
+  stop_colortemp: 1900
+  disable_brightness_adjust: True
+  mode: mired
+ 
+ 
+panel_iframe:
+  router:
+    title: 'Router'
+    icon: mdi:router-wireless
+    url: 'http://192.168.1.1'
+  media:
+    title: 'New Media'
+    icon: mdi:movie
+    url: 'http://192.168.1.182:32400/web/index.html#!/server/6fef3fd5c33d39dff26ac544f2aecc3a6ff5dd0a/list?key=%2Fhubs%2Fhome%2FrecentlyAdded%3Ftype%3D2&type=mixed&title=Recently%20Added%20Television'
+    
+tts:
+  platform: google
+  
+  
