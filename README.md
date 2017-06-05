@@ -1,6 +1,6 @@
-##Devices
+## Devices
 
-##Existing:
+## Existing:
 
 * Raspberry Pi3
   - All In One Installer
@@ -19,14 +19,14 @@
 * Kodi
  *Plex
 
-##Wish List:
+## Wish List:
 * Door sensors – kids rooms
 * Automate garage door
 * Add Caseta Hub for basement light switches
 
-##To Do:
+## To Do:
 
-*Github:
+* Github:
   - ~~Add pictures for all tabs~~
 * Home Assistant
   - Scenes stopped scening – repair
