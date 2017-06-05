@@ -17,7 +17,7 @@
 * Roku x2
 * Chromcast
 * Kodi
- *Plex
+* Plex
 
 ## Wish List:
 * Door sensors – kids rooms
