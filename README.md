@@ -33,7 +33,7 @@ My humble Home Assistant setup, growing ever so slowly.
 * Home Assistant
   - Scenes stopped scening – repair
   - Fine Tune Automations
-* Parts for BRUH DIY Sensor arriving slowly. 
+  - Parts for BRUH DIY Sensor arriving slowly. 
 
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistan_home.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistant_lights.png)
