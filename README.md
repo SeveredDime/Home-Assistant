@@ -5,7 +5,8 @@ My humble Home Assistant setup, growing ever so slowly.
 ## Existing:
 
 * Raspberry Pi3
-  - All In One Installer
+  - ~All In One Installer~
+  - Hassbian Install
 * Google Home
 * Phillips Hue
   - White x3
