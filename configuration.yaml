@@ -6,48 +6,42 @@ homeassistant:
   unit_system: Metric
   time_zone: America/Edmonton
   customize: !include_dir_merge_named customize
-
-# Show links to resources in log and frontend
-
-# Enables the frontend
+   
 frontend:
+config:
 
 http:
+  # Uncomment this to add a password (recommended!)
   api_password: !secret api_password 
+  
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
 
 # Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
 
-# Discover some devices automatically
 discovery:
 
-# Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
-# Enables support for tracking state changes over time.
-#history:
+history:
 
-# View all events in a logbook
 logbook:
 
-# Track the sun
 sun:
 
-recorder:
-  purge_days: 3
+# Weather Prediction
 
-script: !include_dir_merge_named scripts
-scene: !include_dir_list scenes
-group: !include group.yaml
-automation: !include_dir_list automation
-device_tracker: !include device_trackers.yaml
-zone: !include zones.yaml
-sensor: !include sensor.yaml
-weblink: !include weblink.yaml
+tts:
+  platform: google
 
-media_player:
-  - platform: roku
-  - platform: plex
+zwave:
+  usb_path: /dev/ttyACM0
+
 
 emulated_hue:
   type: google_home
@@ -56,29 +50,16 @@ emulated_hue:
   expose_by_default: true
   exposed_domains:
        - light
-       - switch
-      
+       - switch       
 
-ifttt:
-  key: !secret ifttt
+light:
+  platform: hue
+  host: 192.168.1.124
 
-zwave:
-  usb_path: /dev/ttyACM0
-  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
-  polling_interval: 30000
-
-feedreader:
-  urls:
-    - http://coewebapps.edmonton.ca/facilitynotifications/rss/SportsFields.rss
-
-hdmi_cec:
-  devices:
-    Receiver: 1.0.0.0
-    BlueRay player: 1.1.0.0
-  
+       
 switch:
   platform: flux
-  lights:
+  lights:  
     - light.chair_light
     - light.couch_light
   name: Fluxer
@@ -89,19 +70,19 @@ switch:
   stop_colortemp: 1900
   disable_brightness_adjust: True
   mode: mired
- 
- 
-panel_iframe:
-  router:
-    title: 'Router'
-    icon: mdi:router-wireless
-    url: 'http://192.168.1.1'
-  media:
-    title: 'New Media'
-    icon: mdi:movie
-    url: 'http://192.168.1.182:32400/web/index.html#!/server/6fef3fd5c33d39dff26ac544f2aecc3a6ff5dd0a/list?key=%2Fhubs%2Fhome%2FrecentlyAdded%3Ftype%3D2&type=mixed&title=Recently%20Added%20Television'
-    
-tts:
-  platform: google
+
+ifttt:
+  key: !secret ifttt
+
+media_player:
+  - platform: roku
+#  - platform: plex
   
-  
+zone: !include zones.yaml
+group: !include groups.yaml
+device_tracker: !include device_trackers.yaml
+automation: !include_dir_list automation
+script: !include_dir_merge_named scripts
+scene: !include_dir_list scenes
+weblink: !include weblink.yaml
+sensor: !include_dir_merge_list sensor
