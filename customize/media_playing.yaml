@@ -1,3 +1,9 @@
   media_player.roku_3__1gs3d9081111:
     friendly_name: Home Theater
     icon: mdi:filmstrip
+  media_player.roku_1gs3d9081111:
+    friendly_name: Home Theater
+    icon: mdi:filmstrip  
+  media_player.roku_1gn39j219073:
+    friendly_name: Living Room
+    icon: mdi:filmstrip

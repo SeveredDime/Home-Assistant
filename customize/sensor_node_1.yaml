@@ -1,0 +1,8 @@
+  sensor.sn1_humidity:
+    friendly_name: Humidity
+    icon: mdi:water-percent 
+  sensor.sn1_temperature:
+    friendly_name: Temperature
+    icon: mdi:thermometer
+  sensor.sn1_ldr:
+    friendly_name: Light Level  

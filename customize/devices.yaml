@@ -1,0 +1,14 @@
+  sensor.htpc:
+    friendly_name: Home Theater PC
+    icon: mdi:windows
+  sensor.chromecast:
+    friendly_name: Chromecast
+    icon: mdi:google
+  sensor.a47733efd28c:
+    friendly_name: Google Home
+    icon: mdi:google
+  sensor.np1gn39j219073:
+    friendly_name: Living Room Roku
+    icon: mdi:television  
+   
+   
