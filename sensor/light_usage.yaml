@@ -1,0 +1,32 @@
+- platform: history_stats
+  name: Kitchen History
+  entity_id: light.leviton_unknown_type1b03_id0334_level_3_0
+  state: 'on'
+  type: time
+  start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+  end: '{{ now() }}'
+  
+- platform: history_stats
+  name: Living Room History
+  entity_id: group.living_room_lights
+  state: 'on'
+  type: time
+  start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+  end: '{{ now() }}'
+  
+- platform: history_stats
+  name: Garage Lights
+  entity_id: group.garage_lights
+  state: 'on'
+  type: time
+  start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+  end: '{{ now() }}'
+
+- platform: history_stats
+  name: Bedroom Lights
+  entity_id: group.bedroom_lights
+  state: 'on'
+  type: time
+  start: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+  end: '{{ now() }}'  
+ 

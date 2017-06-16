@@ -1,0 +1,10 @@
+- platform: wunderground
+  api_key: 6ca0ee564af77ba5
+  monitored_conditions:
+    - weather
+    - wind_kph
+    - temp_c
+    - wind_dir
+    - relative_humidity
+    - feelslike_c
+    - precip_today_metric
