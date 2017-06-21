@@ -32,11 +32,11 @@ My humble Home Assistant setup, growing ever so slowly.
 * Github:
   - ~~Add pictures for all tabs~~
 * Home Assistant
-  - Scenes stopped scening – repair
+  - ~~Scenes stopped scening – repair~~
   - Fine Tune Automations
   - Parts for BRUH DIY Sensor arriving slowly. 
 
-![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home_assistan_home.png)
+![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/home.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/lights.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/weather.png)
 ![](https://github.com/SeveredDime/Home-Assistant/blob/master/images/network.png)
