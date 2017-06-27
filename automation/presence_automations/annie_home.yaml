@@ -1,0 +1,15 @@
+alias: 'Mark Annie Home'
+condition:
+  condition: state
+  entity_id: input_boolean.annie_home
+  state: 'off'
+trigger:
+  - platform: state
+    entity_id: device_tracker.anniesphone
+    state: 'home' 
+  - platform: state
+    entity_id: device_tracker.annies_phone
+    state: 'home'      
+action:
+   service: homeassistant.turn_on
+   entity_id: input_boolean.annie_home

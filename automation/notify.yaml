@@ -1,0 +1,19 @@
+#Notify When Anathea Leaves Health Center Zone
+
+alias: NotifyWhenLeave
+trigger:
+  - platform: zone
+    entity_id: device_tracker.anniesphone
+    zone: zone.is_at_the_health_center
+    # Event is either enter or leave
+    event: leave
+condition:
+  - condition: time
+    after: '16:30:00'
+    before: '22:00:00'
+action:
+  - service: tts.google_say
+    entity_id: media_player.kitchen_home
+    data_template:
+      message: "Mommy has left work and is on her way!"
+        

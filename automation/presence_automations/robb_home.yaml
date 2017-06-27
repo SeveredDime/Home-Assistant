@@ -1,0 +1,15 @@
+alias: 'Mark Robb Home'
+condition:
+  condition: state
+  entity_id: input_boolean.robb_home
+  state: 'off'
+trigger:
+  - platform: state
+    entity_id: device_tracker.phone_robb_
+    state: 'home' 
+  - platform: state
+    entity_id: device_tracker.robb_parker_galaxy_s5
+    state: 'home'      
+action:
+   service: homeassistant.turn_on
+   entity_id: input_boolean.robb_home

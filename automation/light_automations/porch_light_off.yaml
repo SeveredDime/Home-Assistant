@@ -1,0 +1,16 @@
+alias: Turn off Porch lights off at 10PM
+trigger:
+  - platform: time
+    hours: 21
+    minutes: 45
+    seconds: 0
+condition:
+  - condition: state
+    entity_id: input_boolean.robb_home
+    state: 'on'
+  - condition: state
+    entity_id: input_boolean.annie_home
+    state: 'on'  
+action:
+  - service: homeassistant.turn_off
+    entity_id: light.porch_light
