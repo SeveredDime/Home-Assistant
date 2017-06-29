@@ -1,4 +1,3 @@
-
 alias: Turn Off Air Conditioner
 trigger:
   - platform: numeric_state

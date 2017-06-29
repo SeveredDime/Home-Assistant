@@ -10,7 +10,10 @@ condition:
     state: 'on'
   - condition: state
     entity_id: input_boolean.annie_home
-    state: 'on'  
+    state: 'on' 
+  - condition: state
+    entity_id: input_boolean.light_automation
+    state: 'on'     
 action:
   - service: homeassistant.turn_off
     entity_id: light.porch_light

@@ -7,15 +7,15 @@ trigger:
 condition:
   condition: and
   conditions:
-    - condition: state
+    - condition: state                      
       entity_id: sun.sun
       state: 'below_horizon'
-    - condition: state
+    - condition: state                  
       entity_id: light.porch_light
       state: 'off'
     - condition: state
-      entity_id: input_boolean.automation_override
-      state: 'off'
+      entity_id: input_boolean.light_automation
+      state: 'on'
 action:
   service: light.turn_on
   entity_id: light.porch_light

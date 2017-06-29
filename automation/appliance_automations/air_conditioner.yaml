@@ -9,7 +9,7 @@ condition:
     state: 'home'
   - condition: time
     after: '11:59:00'
-    before: '23:00:00'
+    before: '22:00:00'
 action:
   - service: switch.turn_on
     entity_id: switch.leviton_dzpa11lw_plugin_appliance_module_switch_2_0
