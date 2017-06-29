@@ -1,5 +1,5 @@
 - platform: wunderground
-  api_key: 6ca0ee564af77ba5
+  api_key: !secret wunderground
   monitored_conditions:
     - weather
     - wind_kph
@@ -8,3 +8,5 @@
     - relative_humidity
     - feelslike_c
     - precip_today_metric
+    
+    
