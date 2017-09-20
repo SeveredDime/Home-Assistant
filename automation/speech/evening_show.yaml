@@ -1,0 +1,13 @@
+#####################################################################################
+##  Who's day is it to pick a show anyway? Pretty sure my parent's didn't code to figure this out.##
+#####################################################################################
+alias: 'evening_show'
+trigger:
+  - platform: state
+    entity_id: input_boolean.evening_show
+    to: 'on'
+action:
+  - delay: "00:00:05"
+  - service: script.speech_engine
+    data:
+      call_evening_show: 1

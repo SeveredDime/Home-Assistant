@@ -1,17 +1,17 @@
 alias: Turn on Air Conditioner
+initial_state: True
 trigger:
-  - platform: numeric_state
-    entity_id: sensor.sn1_temperature
-    above: 25
+  - platform: template
+    value_template: '{{ states.sensor.sn1_temperature.state | float >= 24}}'
 condition:
   - condition: state
-    entity_id: group.family
-    state: 'home'
+    entity_id: input_boolean.presence
+    state: 'on'
   - condition: time
-    after: '11:59:00'
+    after: '9:00:00'
     before: '22:00:00'
 action:
   - service: switch.turn_on
-    entity_id: switch.leviton_dzpa11lw_plugin_appliance_module_switch_2_0
+    entity_id: switch.leviton_dzpa11lw_plugin_appliance_module_switch
 
 

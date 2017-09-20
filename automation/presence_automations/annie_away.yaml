@@ -1,7 +1,7 @@
 alias: "Mark Annie Away"
 condition:
   condition: state
-  entity_id: input_boolean.annie_home    
+  entity_id: input_boolean.annie    
   state: 'on'
 # Will only trigger if all are 'not_home'
 trigger:
@@ -9,4 +9,4 @@ trigger:
   value_template: "{% if (is_state('device_tracker.anniesphone','not_home')) and (is_state('device_tracker.annies_phone','not_home')) %}true{% endif %}"
 action:
   service: homeassistant.turn_off
-  entity_id: input_boolean.annie_home
+  entity_id: input_boolean.annie

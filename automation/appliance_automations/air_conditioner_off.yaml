@@ -3,13 +3,7 @@ trigger:
   - platform: numeric_state
     entity_id: sensor.sn1_temperature
     below: 22
-condition:
-  - condition: state
-    entity_id: group.family
-    state: 'home'
-  - condition: time
-    after: '11:59:00'
-    before: '22:00:00'    
+ 
 action:
   - service: switch.turn_off
-    entity_id: switch.leviton_dzpa11lw_plugin_appliance_module_switch_2_0
+    entity_id: switch.leviton_dzpa11lw_plugin_appliance_module_switch

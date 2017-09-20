@@ -1,0 +1,20 @@
+alias: Turn on Ourdoor lights when sun sets
+trigger:
+  platform: sun
+  event: sunset
+  offset: "-00:30:00"       
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.presence_automation
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.light_automation
+      state: 'on'
+action:
+  - service: light.turn_on
+    entity_id: group.outdoor_lights
+    data:
+      brightness: 255
+

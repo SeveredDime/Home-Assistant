@@ -1,0 +1,21 @@
+##########################################################
+# Remind Anathea to give the kids Thier Morning Vitamins #
+##########################################################
+alias: 'Vitamins'
+trigger:
+  platform: time
+  at: '7:30:00'
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.presence_automation
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.voice_notifications
+      state: 'on'  
+action:
+  - delay: "00:00:03"
+  - service: script.speech_engine
+    data:
+      call_vitamins: 1
