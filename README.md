@@ -19,7 +19,6 @@ My humble Home Assistant setup, growing ever so slowly.
   - Leviton Lamp Dimmer
 * Roku x2
 * Chromcast
-* Kodi
 * Plex
 
 ## Wish List:
