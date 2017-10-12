@@ -17,6 +17,7 @@ My humble Home Assistant setup, growing ever so slowly.
   - Leviton Z-Wave Dimmer
   - Leviton Appliance Modual
   - Leviton Lamp Dimmer
+  - 3x Aeotec Micro Switchs for basement fluorescent lights
 * Roku x2
 * Chromcast
 * Plex
@@ -24,7 +25,6 @@ My humble Home Assistant setup, growing ever so slowly.
 ## Wish List:
 * Door sensors – kids rooms
 * Automate garage door
-* Find a solution to control basement fluorescent tubes with no neutrals - Looking to try out a Zwave micro switch in the fixture, where there is a neutral wire. 
 
 ## To Do:
 
