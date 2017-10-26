@@ -1,4 +1,5 @@
 My humble Home Assistant setup, growing ever so slowly.
+Credit to CCOSTAN for a lot of what you see here. 
 
 ## Devices
 
