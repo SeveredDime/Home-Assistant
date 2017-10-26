@@ -9,7 +9,6 @@ My humble Home Assistant setup, growing ever so slowly.
   - Hassbian Install
 * Google Home
 * Phillips Hue
-  - White x3
   - White Ambiance x2
   - BR30 x 2
   - Cree Connected x3
